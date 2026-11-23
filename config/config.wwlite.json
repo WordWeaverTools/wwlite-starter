@@ -1,0 +1,84 @@
+{
+  "configVersion": 1,
+  "dataConfig": {
+    "replace": {
+      "#": " "
+    },
+    "test": true,
+    "autoPlace": true,
+    "inputFile": {
+      "path": "Data/fr.csv",
+      "format": "csv"
+    },
+    "result": {
+      "name": "text",
+      "delimiter": "_",
+      "order": ["text"]
+    },
+    "categoryOrder": ["verb", "subject", "option"],
+    "headerDelimiter": "_"
+  },
+  "siteConfig": {
+    "title": "ww-lite",
+    "categoryDisplay": { 
+      "verb": {
+        "label": "Verb",
+        "selectionLabel": "Choose a",
+        "description": "Action word",
+        "styles": {
+          "color": "#E980FC"
+        }
+    }, 
+    "subject": {
+        "label": "Subject",
+        "selectionLabel": "Choose a",
+        "description": "Person, place, or thing",
+        "styles": {
+          "color": "#FFD2FC"
+        }
+    }, 
+    "option": {
+        "label": "Option",
+        "selectionLabel": "Choose an",
+        "description": "Tense.",
+        "styles": {
+          "color": "#DDFFF7"
+        }
+    } 
+  },
+    "orthography": [
+      {
+        "name": "standard roman orthography",
+        "shorthand": "sro",
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "u",
+          "v",
+          "w",
+          "x",
+          "y",
+          "z"
+        ]
+      }
+    ]
+  }
+}

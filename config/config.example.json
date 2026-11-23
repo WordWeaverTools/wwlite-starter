@@ -1,0 +1,98 @@
+{
+  "configVersion": 1,
+  "dataConfig": {
+    "replace": {
+      "#": " "
+    },
+    "test": true,
+    "autoPlace": true,
+    "inputFile": {
+      "path": "Data/example.csv",
+      "format": "csv"
+    },
+    "result": {
+      "name": "text",
+      "delimiter": "_",
+      "order": ["text", "gloss"],
+      "subResult": [
+        {
+          "name": "gloss"
+        }
+      ]
+    },
+    "categoryOrder": ["noun", "verb", "pronoun"],
+    "headerDelimiter": "_"
+  },
+  "siteConfig": {
+    "title": "ww-lite",
+    "categoryDisplay": { 
+      "verb": {
+        "label": "Verb",
+        "selectionLabel": "Choose a",
+        "description": "The action word",
+        "styles": {
+          "color": "#E980FC"
+        }
+    }, 
+    "noun": {
+        "label": "Noun",
+        "selectionLabel": "Choose a",
+        "description": "Person, place, or thing",
+        "styles": {
+          "color": "#FFD2FC"
+        }
+    }, 
+    "pronoun": {
+        "label": "Pronoun",
+        "selectionLabel": "Choose a",
+        "description": "Replaces a person, place, or thing.",
+        "styles": {
+          "color": "#DDFFF7"
+        }
+    } 
+  },
+  "otherDisplay": {
+    "gloss":
+    {
+      "label":"Gloss",
+      "description": "linguistic breakdown",
+      "styles":{
+      }
+    }
+  },
+    "orthography": [
+      {
+        "name": "standard roman orthography",
+        "shorthand": "sro",
+        "order": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "u",
+          "v",
+          "w",
+          "x",
+          "y",
+          "z"
+        ]
+      }
+    ]
+  }
+}
