@@ -47,7 +47,7 @@ jobs:
         env:
           CONFIG_FILE: ${{ inputs.config_file }}
         run: |
-          python DataBuilder/src/main.py -f "config/$CONFIG_FILE" 2>&1 | tee build.log
+          python DataBuilder/src/main.py -f "../config/$CONFIG_FILE" 2>&1 | tee build.log
           EXIT_CODE=${PIPESTATUS[0]}
           {
             echo "## Data Structuring:"
