@@ -6,7 +6,7 @@
   "test": true,
   "autoPlace": true,
   "inputFile": {
-    "path": "Data/fr.csv",
+    "path": "data/fr.csv",
     "format": "csv"
   },
   "result": {
