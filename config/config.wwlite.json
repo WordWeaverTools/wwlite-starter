@@ -1,23 +1,21 @@
 {
   "configVersion": 1,
-  "dataConfig": {
-    "replace": {
-      "#": " "
-    },
-    "test": true,
-    "autoPlace": true,
-    "inputFile": {
-      "path": "Data/fr.csv",
-      "format": "csv"
-    },
-    "result": {
-      "name": "text",
-      "delimiter": "_",
-      "order": ["text"]
-    },
-    "categoryOrder": ["verb", "subject", "option"],
-    "headerDelimiter": "_"
+  "replace": {
+    "#": " "
   },
+  "test": true,
+  "autoPlace": true,
+  "inputFile": {
+    "path": "Data/fr.csv",
+    "format": "csv"
+  },
+  "result": {
+    "name": "text",
+    "delimiter": "_",
+    "order": ["text"]
+  },
+  "categoryOrder": ["verb", "subject", "option"],
+  "headerDelimiter": "_",
   "siteConfig": {
     "title": "ww-lite",
     "categoryDisplay": { 
