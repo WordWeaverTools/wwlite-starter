@@ -43,11 +43,10 @@ jobs:
           pip install -r requirements.txt
 
       - name: Build 🔧
-        working-directory: ./wwlite/
         env:
           CONFIG_FILE: ${{ inputs.config_file }}
         run: |
-          python DataBuilder/src/main.py -f "../config/$CONFIG_FILE" 2>&1 | tee build.log
+          python wwlite/DataBuilder/src/main.py -f "config/$CONFIG_FILE" 2>&1 | tee build.log
           EXIT_CODE=${PIPESTATUS[0]}
           {
             echo "## Data Structuring:"
