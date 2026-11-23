@@ -2,10 +2,11 @@ name: Build Data Files
 on:
   workflow_dispatch:
     inputs:
-        config_file:
-          description: "Config file name"
-          required: true
-          default: "config.wwlite.json"
+      config_file:
+        description: "Config file name"
+        required: true
+        default: "config.wwlite.json"
+
 
 
 permissions:
