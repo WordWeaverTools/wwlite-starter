@@ -28,7 +28,7 @@ jobs:
         with:
           repository: WordWeaverTools/WordWeaverLite
           ref: main
-          path: .
+          path: wwlite
 
       - name: Setup Python 3.8
         uses: actions/setup-python@v5
@@ -37,7 +37,7 @@ jobs:
           python-version: "3.8"
 
       - name: Install DataBuilder Dependecies
-        working-directory: ./DataBuilder/
+        working-directory: ./wwlite/DataBuilder/
         run: |
           pip install --upgrade pip==24.0
           pip install -r requirements.txt
@@ -46,7 +46,7 @@ jobs:
         env:
           CONFIG_FILE: ${{ inputs.config_file }}
         run: |
-          python DataBuilder/src/main.py -f "config/$CONFIG_FILE" 2>&1 | tee build.log
+          python wwlite/DataBuilder/src/main.py -f "config/$CONFIG_FILE" 2>&1 | tee build.log
           EXIT_CODE=${PIPESTATUS[0]}
           {
             echo "## Data Structuring:"
